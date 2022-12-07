@@ -1,0 +1,21 @@
+.container {
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#form {
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.pygrammers {
+    margin-top: 60px;
+    margin-bottom: 140px;
+}
+
