@@ -20,7 +20,7 @@
 </style>
 <body>
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #a0b1bc;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #a0b1bc;">
         <a class="navbar-brand" href="carouselExampleIndicators">
             <img src="logo/buildlogo.png" width="170" height="60" alt="">
         </a>
@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#carouselExampleIndicators">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#form">Register</a>
+                    <a class="nav-link" href="#register">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#cards">Mentors</a>
@@ -74,11 +74,11 @@
     <div class="text-center pygrammers">
         <h3>Join us</h3><br>
         <p>Pygrammers is community of python enthusiasts with similar idealogies and interest</p><br>
-        <button class="btn btn-primary" type="submit">Telegram</button>
+        <a href="https://telegram.me/pygrammers_official"></a><button class="btn btn-primary" type="submit">Telegram</button></a>
     </div>
 
     <!-- form -->
-    <div id="form">
+    <!-- <div id="form">
         <h4 class="text-center">Form:</h4>
         <form class="container border border-secondary rounded container1">
             <div class="form-group text-center">
@@ -111,7 +111,49 @@
                 <button class="btn" type="submit" style="background-color: #a8b9c6;">Submit form</button>
             </div><br>
         </form>
-    </div>
+    </div> -->
+
+    <div id="register" class="w-50 container-fluid pb-5" style="min-width: 20em;">
+		<form class="form border border-secondary p-4" style="--bs-border-opacity: .3;" >
+			<div id="Telegram" class="text-center">
+				<h4>Form:</h4>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Name</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Mobile number</label>
+					<input type="text" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Company / Institution name</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+			</div>
+			<div class="pt-2 pb-4">
+				<div id="emailHelp" class="form-text pb-1">Upload a short video or image of hand written sheet showing your interest to join build.myweb</div>
+				<input type="file" name="" id="">
+			</div>
+			<div class="text-center pb-4">
+				<div class="dropdown">
+					<button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="white-space: normal;">Have you attended any events by Pygrammers before!?</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-outline-secondary text-dark" style="background-color: rgb(208, 230, 239);">Submit form</button>
+			</div>
+		</form>
+	</div>
+
 
     <!-- cards -->
     <div class="container" id="cards">
