@@ -21,7 +21,7 @@
 <body>
     <!-- navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #a0b1bc;">
-        <a class="navbar-brand" href="carouselExampleIndicators">
+        <a class="navbar-brand" href="carousel">
             <img src="logo/buildlogo.png" width="170" height="60" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -33,7 +33,7 @@
 
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#carouselExampleIndicators">Home</a>
+                    <a class="nav-link" href="#carousel">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#register">Register</a>
@@ -42,17 +42,17 @@
                     <a class="nav-link" href="#cards">Mentors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=" ">Participate</a>
+                    <a class="nav-link" href="#participants">Participants</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -62,21 +62,25 @@
                 <img class="d-block w-100" src="img/carousel2.png" alt="Second slide">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!-- pygrammer telegram -->
     <div class="text-center pygrammers">
         <h3>Join us</h3><br>
         <p>Pygrammers is community of python enthusiasts with similar idealogies and interest</p><br>
-        <a href="https://telegram.me/pygrammers_official"></a><button class="btn btn-primary" type="submit">Telegram</button></a>
+        <a href="https://telegram.me/pygrammers_official" target="_blank"><button class="btn btn-primary" type="submit">Telegram</button></a>
     </div>
 
+
+    <!-- form -->
     <div id="register" class="w-50 container-fluid pb-5" style="min-width: 20em;">
 		<form class="form border border-secondary p-4" style="--bs-border-opacity: .3;" >
 			<div id="Telegram" class="text-center">
@@ -99,19 +103,14 @@
 				</div>
 			</div>
 			<div class="pt-2 pb-4">
-				<div id="emailHelp" class="form-text pb-1">Upload a short video or image of hand written sheet showing your interest to join build.myweb</div>
+				<div id="emailHelp" class="form-text pb-1"><small>Upload a short video or image of hand written sheet showing your interest to join build.myweb</small></div>
 				<input type="file" name="" id="">
 			</div>
-			<div class="text-center pb-4">
-				<div class="dropdown">
-					<button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="white-space: normal;">Have you attended any events by Pygrammers before!?</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-				</div>
-			</div>
+			<select class="form-select form-control" aria-label="Default select example">
+                <option selected>Have you attended any events by Pygrammers before?!</option>
+                <option value="1">YES</option>
+                <option value="2">NO</option>
+              </select><br>
 			<div class="text-center">
 				<button type="submit" class="btn btn-outline-secondary text-dark" style="background-color: rgb(208, 230, 239);">Submit form</button>
 			</div>
@@ -189,6 +188,44 @@
                 </div>
             </div>
         </div>
+    </div>
+     <!-- participants -->
+    <div class="container text-center w-300" id="participants"><br><br>
+        <h3>Participants</h3><br>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Larry</td>
+          </tr>
+        </tbody>
+    </table>
     </div>
 
     <!-- footer -->
